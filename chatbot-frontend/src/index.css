@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+
+* {
+	color: var(--white);
+	font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+	--white: #ffffff;
+	--black: #000000;
+
+	--gray-50: #f9fafb;
+	--gray-100:#f3f4f6;
+	--gray-200:#e5e7eb;
+	--gray-300:#d1d5db;
+	--gray-400:#9ca3af;
+	--gray-500:#6b7280;
+	--gray-600:#4b5563;
+	--gray-700:#374151;
+	--gray-800:#1f2937;
+	--gray-900:#111827;
+	--gray-950:#030712;
+
+	--slate-50: #f8fafc;
+	--slate-100: #f1f5f9;
+	--slate-200: #e2e8f0;
+	--slate-300: #cbd5e1;
+	--slate-400: #94a3b8;
+	--slate-500: #64748b;
+	--slate-600: #475569;
+	--slate-700: #334155;
+	--slate-800: #1e293b;
+	--slate-900: #0f172a;
+	--slate-950: #020617;
+
+
+	--tahiti-100: #cffafe,
+		--tahiti-200: #a5f3fc,
+		--tahiti-300: #67e8f9,
+		--tahiti-400: #22d3ee,
+		--tahiti-500: #06b6d4,
+		--tahiti-600: #0891b2,
+		--tahiti-700: #0e7490,
+		--tahiti-800: #155e75,
+		--tahiti-900: #164e63,
+
+		--blue-100: #009bf5;
+	--blue-200: #008fe2;
+	--blue-250: #0078d6;
+	--blue-300: #007fdf;
+	--blue-400: #007ac0;
+	--blue-450: #006faf;
+	--blue-550: #006ead;
+	--blue-600: #006ba8;
+	--blue-630: #00649e;
+	--blue-650: #004f7c;
+	--blue-700: #003c5f;
+	--blue-800: #00283f;
+	--blue-900: #000e16;
+
+	--transparent-gray-200: #e7e7e7d5;
+
+	--dark-bs-btn: #212529;
+	--dark-500: #212127;
+	--dark-600: #16161a;
+
+	--red-500: #e95751;
+
+	--green-500: #22cc88;
+
+	--blue-500: #1e90ff;
+
+	--purple-500: #a51eff;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	text-decoration: none;
+
+	/* IE and Edge */
+	-ms-overflow-style: none;
+	/* Firefox */
+	scrollbar-width: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	background-color: var(--gray-900);
+	display: flex;
+	flex-direction: row;
+}
+
+.side-bar {
+	background-color: var(--gray-950);
+	height: 100vh;
+	width: 16rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.main {
+	height: 100vh;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.btn-new-chat {
+	background-color: var(--gray-800) !important;
+	border: none !important;
+	box-shadow: 0rem 0rem 3rem var(--gray-800);
+}
+
+.chat-history {
+	padding: 1rem;
+	margin: 1rem;
+	height: 100%;
+}
+
+.chat-history li {
+	list-style-type: none;
+	padding: 1rem 0;
+	cursor: pointer;
+}
+
+.text-feed{
+	overflow-y: auto;
+	width: 100%;
+	padding: 0 1rem;
+}
+.text-feed li {
+	background-color: var(--gray-800);
+
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+	margin: 1rem 0;
+
+	border-radius: 1rem;
+}
+
+.text-feed span {
+	font-size: 1rem;
+	text-align: left;
+	width: 100%;
+
+	padding: 1rem;
+}
+.text-feed span.feed-role {
+	color: var(--slate-400);
+	max-width: 10rem !important;
+}
+
+.info {
+	font-size: 0.8rem;
+	padding: 1rem;
+}
+
+.bottom-wrapper {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 50rem;
+	border-radius: 1rem;
+
+	box-shadow: 0rem 1rem 3rem var(--gray-950);
+}
+
+/* !importat is needed to override Bootstrap's css */
+.input-field {
+	background-color: var(--gray-800) !important;
+	color: var(--white) !important;
+	border: none !important;
+	border-radius: 1rem !important;
+}
+
+.input-field:focus {
+	box-shadow: none !important;
+}
+
+.submit-button {
+	background-color: var(--gray-800);
+	color: var(--white);
+
+	border: none;
+	border-radius: 1rem;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+
+	height: 100%;
+	padding: 1rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.submit-button:hover {
+	background-color: var(--gray-700);
+}
