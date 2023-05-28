@@ -11,16 +11,16 @@
 	--black: #000000;
 
 	--gray-50: #f9fafb;
-	--gray-100:#f3f4f6;
-	--gray-200:#e5e7eb;
-	--gray-300:#d1d5db;
-	--gray-400:#9ca3af;
-	--gray-500:#6b7280;
-	--gray-600:#4b5563;
-	--gray-700:#374151;
-	--gray-800:#1f2937;
-	--gray-900:#111827;
-	--gray-950:#030712;
+	--gray-100: #f3f4f6;
+	--gray-200: #e5e7eb;
+	--gray-300: #d1d5db;
+	--gray-400: #9ca3af;
+	--gray-500: #6b7280;
+	--gray-600: #4b5563;
+	--gray-700: #374151;
+	--gray-800: #1f2937;
+	--gray-900: #111827;
+	--gray-950: #030712;
 
 	--slate-50: #f8fafc;
 	--slate-100: #f1f5f9;
@@ -51,7 +51,7 @@
 	--blue-300: #007fdf;
 	--blue-400: #007ac0;
 	--blue-450: #006faf;
-	--blue-550: #006ead;
+	--blue-500: #006ead;
 	--blue-600: #006ba8;
 	--blue-630: #00649e;
 	--blue-650: #004f7c;
@@ -69,8 +69,6 @@
 
 	--green-500: #22cc88;
 
-	--blue-500: #1e90ff;
-
 	--purple-500: #a51eff;
 
 	font-synthesis: none;
@@ -87,139 +85,33 @@
 	scrollbar-width: none;
 }
 
+* {
+	/* Estilizando a scrollbar */
+	scrollbar-width: thin;
+	scrollbar-color: #aaa #eee;
+	/* Cor da thumb e do track */
+}
+
+*::-webkit-scrollbar {
+	width: 0.4rem;
+	/* Largura da scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--gray-600);
+	/* Cor da thumb */
+	border-radius: 1 rem;
+	/* Borda arredondada da thumb */
+}
+
+*::-webkit-scrollbar-track {
+	background-color: transparent;
+	/* Cor do track */
+}
+
+
+
 body {
 	margin: 0;
 	padding: 0;
-}
-
-.app {
-	background-color: var(--gray-900);
-	display: flex;
-	flex-direction: row;
-}
-
-.side-bar {
-	background-color: var(--gray-950);
-	height: 100vh;
-	width: 16rem;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.main {
-	height: 100vh;
-	width: 100%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-}
-
-.btn-new-chat {
-	background-color: var(--gray-800) !important;
-	border: none !important;
-	box-shadow: 0rem 0rem 3rem var(--gray-800);
-}
-
-.chat-history {
-	padding: 1rem;
-	margin: 1rem;
-	height: 100%;
-}
-
-.chat-history li {
-	list-style-type: none;
-	padding: 1rem 0;
-	cursor: pointer;
-}
-
-.text-feed{
-	overflow-y: auto;
-	width: 100%;
-	padding: 0 1rem;
-}
-.text-feed li {
-	background-color: var(--gray-800);
-
-	display: flex;
-	flex-direction: row;
-
-	width: 100%;
-	margin: 1rem 0;
-
-	border-radius: 1rem;
-}
-
-.text-feed span {
-	font-size: 1rem;
-	text-align: left;
-	width: 100%;
-
-	padding: 1rem;
-}
-.text-feed span.feed-role {
-	color: var(--slate-400);
-	max-width: 10rem !important;
-}
-
-.info {
-	font-size: 0.8rem;
-	padding: 1rem;
-}
-
-.bottom-wrapper {
-	width: 100%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.input-wrapper {
-	position: relative;
-	width: 100%;
-	max-width: 50rem;
-	border-radius: 1rem;
-
-	box-shadow: 0rem 1rem 3rem var(--gray-950);
-}
-
-/* !importat is needed to override Bootstrap's css */
-.input-field {
-	background-color: var(--gray-800) !important;
-	color: var(--white) !important;
-	border: none !important;
-	border-radius: 1rem !important;
-}
-
-.input-field:focus {
-	box-shadow: none !important;
-}
-
-.submit-button {
-	background-color: var(--gray-800);
-	color: var(--white);
-
-	border: none;
-	border-radius: 1rem;
-
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	cursor: pointer;
-
-	height: 100%;
-	padding: 1rem;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.submit-button:hover {
-	background-color: var(--gray-700);
 }
