@@ -35,17 +35,17 @@
 	--slate-950: #020617;
 
 
-	--tahiti-100: #cffafe,
-		--tahiti-200: #a5f3fc,
-		--tahiti-300: #67e8f9,
-		--tahiti-400: #22d3ee,
-		--tahiti-500: #06b6d4,
-		--tahiti-600: #0891b2,
-		--tahiti-700: #0e7490,
-		--tahiti-800: #155e75,
-		--tahiti-900: #164e63,
+	--tahiti-100: #cffafe;
+	--tahiti-200: #a5f3fc;
+	--tahiti-300: #67e8f9;
+	--tahiti-400: #22d3ee;
+	--tahiti-500: #06b6d4;
+	--tahiti-600: #0891b2;
+	--tahiti-700: #0e7490;
+	--tahiti-800: #155e75;
+	--tahiti-900: #164e63;
 
-		--blue-100: #009bf5;
+	--blue-100: #009bf5;
 	--blue-200: #008fe2;
 	--blue-250: #0078d6;
 	--blue-300: #007fdf;
@@ -108,8 +108,6 @@
 	background-color: transparent;
 	/* Cor do track */
 }
-
-
 
 body {
 	margin: 0;
